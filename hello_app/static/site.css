@@ -30,3 +30,99 @@
     padding: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+    background: radial-gradient(circle at top, #1f2430, #0f1218);
+    color: #f5f7fa;
+    min-height: 100vh;
+}
+
+.widget-shell {
+    display: flex;
+    justify-content: center;
+    padding: 40px 12px;
+}
+
+.widget-card {
+    width: 320px;
+    border-radius: 28px;
+    background: linear-gradient(160deg, #2a2f39, #1c2028);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.35);
+    padding: 22px 22px 24px;
+}
+
+.widget-market {
+    margin-bottom: 18px;
+}
+
+.widget-row {
+    display: grid;
+    grid-template-columns: 16px 1fr auto;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+    margin-bottom: 6px;
+}
+
+.widget-indicator {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid #37d071;
+}
+
+.widget-label {
+    font-weight: 600;
+    color: #e0e5ec;
+}
+
+.widget-value {
+    font-weight: 600;
+    color: #f1f4f8;
+}
+
+.widget-gold {
+    margin: 16px 0 20px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.widget-gold-title {
+    font-size: 0.85rem;
+    color: #c6ccd6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.widget-gold-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 6px 0 4px;
+    color: #ffd480;
+}
+
+.widget-gold-meta {
+    font-size: 0.75rem;
+    color: #a9b0bb;
+}
+
+.widget-news-title {
+    font-size: 0.85rem;
+    color: #bfc6cf;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.widget-news-headline {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.widget-news-subtitle {
+    font-size: 0.9rem;
+    color: #b1b7c2;
+}

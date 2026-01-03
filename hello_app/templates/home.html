@@ -3,5 +3,36 @@
 Home
 {% endblock %}
 {% block content %}
-<p>Home page for the Visual Studio Code Flask tutorial.</p>
+<div class="widget-shell">
+    <div class="widget-card">
+        <div class="widget-market">
+            <div class="widget-row">
+                <span class="widget-indicator up"></span>
+                <span class="widget-label">S&amp;P 500</span>
+                <span class="widget-value">6.858</span>
+            </div>
+            <div class="widget-row">
+                <span class="widget-indicator up"></span>
+                <span class="widget-label">DOW</span>
+                <span class="widget-value">48.382</span>
+            </div>
+            <div class="widget-row">
+                <span class="widget-indicator up"></span>
+                <span class="widget-label">BA</span>
+                <span class="widget-value">227,77</span>
+            </div>
+        </div>
+        <div class="widget-gold">
+            <div class="widget-gold-title">Gram Altın</div>
+            <div class="widget-gold-value" id="gold-price">--</div>
+            <div class="widget-gold-meta" id="gold-updated">Güncelleniyor...</div>
+        </div>
+        <div class="widget-news">
+            <div class="widget-news-title">Borsatek</div>
+            <div class="widget-news-headline">Dow Jones ve S&amp;P 500 yükseldi</div>
+            <div class="widget-news-subtitle">Nasdaq teknoloji hisseleriyle güçlü seyretti.</div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='gold_widget.js') }}"></script>
 {% endblock %}
